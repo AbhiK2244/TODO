@@ -40,13 +40,11 @@ function App() {
 
     let newTodos = todos.filter((item) => item.id !== id);
     setTodos(newTodos);
-    saveToLocalStorage();
   };
 
   const handleDelete = (event, id) => {
     let newTodos = todos.filter((item) => item.id !== id);
     setTodos(newTodos);
-    saveToLocalStorage();
   };
 
   const handleChange = (event) => {
@@ -56,7 +54,6 @@ function App() {
   const handleAdd = () => {
     setTodos([...todos, { id: uuidv4(), todo, isCompleted: false }]);
     setTodo("");
-    saveToLocalStorage();
   };
 
   const handleCheckbox = (event) => {
@@ -66,7 +63,6 @@ function App() {
     let newTodos = [...todos];
     newTodos[index].isCompleted = !newTodos[index].isCompleted;
     setTodos(newTodos);
-    saveToLocalStorage();
   };
 
   return (
