@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+  @apply bg-violet-800 hover:bg-violet-950 text-sm font-bold text-white rounded-md px-3 py-1;
+}
+
+body{
+  --tw-bg-opacity: 1;
+  /* background-image: url(/images/buried.png); */
+  background-color: rgb(226, 223, 239)
+}
+
+/* .todo-body{
+  --tw-bg-opacity: 1;
+  background-image: url(/images/black-linen.png);
+  background-color: rgb(226, 223, 239)
+} */
+
