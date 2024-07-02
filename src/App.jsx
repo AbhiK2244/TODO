@@ -68,7 +68,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="todo-body container mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] lg:w-1/2 md:w-3/4 sm:w-full">
+      <div className="todo-body container mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] lg:w-[40%] md:w-3/4 sm:w-full">
         <h1 className="font-bold text-center text-xl">Manage you Todos</h1>
         <div className="addTodo  my-5">
           <h2 className="text-lg font-bold my-2">Add a Todo</h2>
@@ -82,7 +82,8 @@ function App() {
           </div>
 
         </div>
-        <input type="checkbox" onChange={toggleFinished} className="cursor-pointer" checked={showFinished} name="" id="showfinished" /> <label className="mx-3 cursor-pointer" for="showfinished">Show Finished</label>
+        <input type="checkbox" onChange={toggleFinished} className="cursor-pointer" checked={showFinished} name="" id="showfinished" /> <label className="mx-3 cursor-pointer" htmlFor="showfinished">Show Finished</label>
+        <div className="bg-black h-[1px] opacity-15"></div>
         <h2 className="text-lg font-bold my-4">Your TODOs</h2>
 
         <div className="todos">
